@@ -1,0 +1,6 @@
+------------others(The front part is the bytebeat formula, and the number in the brackets is the Hz value)------------
+5 * (t ^ (t >> 7))(12000hz)
+((t % (0x89ac >> ((t >> 9) & 0xf) & 0x1e)+1) | (t >> 5)) << 4(12000hz)
+((0x6b6f >> ((t >> 9) & 0xe)) & 0x1e) * t ^ t *2(12000hz)
+((t >> (6 - ((t & 0x1000) != 0) & 0x1f)) | 0x9f) *t(12000hz)
+((t>> 8) * t & t << 4)(9000hz)
